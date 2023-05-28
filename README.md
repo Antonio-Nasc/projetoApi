@@ -8,7 +8,7 @@ Desenvolvimento de uma Api de filme, fazendo relacionamentos com cinema, endere�
 5. Utilizar método Get para visualizar as requests
 6. Para visualização geral, após o endereço, ex: localhost:4321/, utilizar filme, sessao, endereco ou cinema para uma visualização em geral
 
-##Tecnologias necessárias:
+## Tecnologias necessárias:
 1. Visual Studio
 2. Mysql
 3. postman
