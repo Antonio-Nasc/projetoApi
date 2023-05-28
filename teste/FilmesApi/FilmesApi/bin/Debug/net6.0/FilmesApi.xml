@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmesApi</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesApi.Controllers.CinemaController.AdicionarCinema(FilmesApi.Data.Dtos.CreateCinemaDto)">
+            <summary>
+            Adiciona um cinema
+            </summary>
+            <param name="filmeDto">Objetos necessários para criação de um cinema</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.RecuperaCinemas(System.Nullable{System.Int32})">
+            <summary>
+            Obtem cinemas
+            </summary>
+            <param name="filmeDto">Visualização dos cinemas</param>
+            <returns>IEnumerable</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.RecuperaCinemaPorId(System.Int32)">
+            <summary>
+            Obtem cinema específico
+            </summary>
+            <param name="filmeDto">Visualização de um cinema específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.AtualizarCinema(System.Int32,FilmesApi.Data.Dtos.UpdateCinemaDto)">
+            <summary>
+            Atualiza cinema
+            </summary>
+            <param name="filmeDto">Atualização de cinema específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.CinemaController.DeletarCinema(System.Int32)">
+            <summary>
+            Deleta cinema específico
+            </summary>
+            <param name="filmeDto">Deleção de cinema específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.AdicionaEndereco(FilmesApi.Data.Dtos.CreateEnderecoDto)">
+            <summary>
+            Adiciona um endereço
+            </summary>
+            <param name="filmeDto">Objetos necessários para criação de uma endereço</param>
+            <returns>IActionResult</returns>
+            <response code="201">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.RecuperaEndereco">
+            <summary>
+            Obtem endereços
+            </summary>
+            <param name="filmeDto">Visualização dos endereços</param>
+            <returns>IEnumerable</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.RecuperaEnderecosPorId(System.Int32)">
+            <summary>
+            Obtem endereço específico
+            </summary>
+            <param name="filmeDto">Visualização de um endereço específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.AtualizaEndereco(System.Int32,FilmesApi.Data.Dtos.UptadeEnderecoDto)">
+            <summary>
+            Atualiza endereço específico
+            </summary>
+            <param name="filmeDto">Atualização de endereço específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.EnderecoController.DeletaEndereco(System.Int32)">
+            <summary>
+            Deleta filme específico
+            </summary>
+            <param name="filmeDto">Deleção de endereço específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AdicionarFilme(FilmesApi.Data.Dtos.CreateFilmeDto)">
+            <summary>
+            Adiciona um filme
+            </summary>
+            <param name="filmeDto">Objetos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmes(System.Int32,System.Int32,System.String)">
+            <summary>
+            Obtem filmes
+            </summary>
+            <param name="filmeDto">Visualização dos filmes</param>
+            <returns>IEnumerable</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmePorId(System.Int32)">
+            <summary>
+            Obtem filme específico
+            </summary>
+            <param name="filmeDto">Visualização de um filme específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AtualizaFilme(System.Int32,FilmesApi.Data.Dtos.UpdateFilmeDto)">
+            <summary>
+            Atualiza filme
+            </summary>
+            <param name="filmeDto">Atualização de filme específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AtualizaFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesApi.Data.Dtos.UpdateFilmeDto})">
+            <summary>
+            Atualiza filme parcial
+            </summary>
+            <param name="filmeDto">Atualização de filme específico e parcial</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RemoveFilme(System.Int32)">
+            <summary>
+            Deleta filme específico
+            </summary>
+            <param name="filmeDto">Deleção de filme específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.SessaoController.AdicionaSessao(FilmesApi.Data.Dtos.CreateSessaoDto)">
+            <summary>
+            Adiciona uma sessão
+            </summary>
+            <param name="filmeDto">Objetos necessários para criação de uma sessão</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.SessaoController.RecuperaSessoes">
+            <summary>
+            Obtem sessões
+            </summary>
+            <param name="filmeDto">Visualização das sessões</param>
+            <returns>IEnumerable</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:FilmesApi.Controllers.SessaoController.RecuperaSessoesPorId(System.Int32,System.Int32)">
+            <summary>
+            Obtem sessões específicas
+            </summary>
+            <param name="filmeDto">Visualização de uma sessão específico</param>
+            <returns>IActionResult</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="T:FilmesApi.Migrations.CriandoTabelaDeFilmes">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CriandoTabelaDeFilmes.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CriandoTabelaDeFilmes.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CriandoTabelaDeFilmes.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.CinemaeEndereco">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CinemaeEndereco.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CinemaeEndereco.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CinemaeEndereco.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.SessaoeFilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.SessaoeFilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.SessaoeFilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.SessaoeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.SessaoeCinema">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.SessaoeCinema.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.SessaoeCinema.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.SessaoeCinema.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.FilmeIdNulo">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.FilmeIdNulo.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.FilmeIdNulo.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.FilmeIdNulo.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.CinemaeFilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CinemaeFilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CinemaeFilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.CinemaeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.Deleterestrict">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.Deleterestrict.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.Deleterestrict.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.Deleterestrict.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
